@@ -77,7 +77,6 @@ export function getAddressInfos( addrs: AddrLike | AddrLike[], network: KoiosNet
                         fromHex( u.reference_script.bytes )
                     );
                 }
-
                 return new UTxO({
                     utxoRef: {
                         index: u.tx_index ?? 0,
@@ -87,7 +86,8 @@ export function getAddressInfos( addrs: AddrLike | AddrLike[], network: KoiosNet
                         address: addr.clone(),
                         value,
                         datum,
-                        refScript
+                        refScript,
+                        blockTime: u.block_time
                     }
                 })
             }) ?? [];
