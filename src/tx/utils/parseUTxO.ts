@@ -44,6 +44,8 @@ export function parseUTxO( u: any ): UTxO
         );
     }
     
+    let blockTime: number = u.block_time;
+
     return new UTxO({
         utxoRef: {
             id: u.tx_hash as string,
@@ -53,7 +55,8 @@ export function parseUTxO( u: any ): UTxO
             address: Address.fromString( u.payment_addr.bech32 ),
             value,
             datum,
-            refScript
+            refScript,
+            blockTime
         }
     })
 }

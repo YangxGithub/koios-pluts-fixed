@@ -1,6 +1,6 @@
 {
   "name": "@yangxnpm/koios-pluts-fixed",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "A Koios API wrapper based on plu-ts types",
   "main": "dist/index.js",
   "type": "commonjs",
@@ -25,8 +25,9 @@
   },
   "homepage": "https://github.com/HarmonicLabs/koios-pluts#readme",
   "dependencies": {
-    "@harmoniclabs/uint8array-utils": "^1.0.0",
-    "@harmoniclabs/plu-ts": "^0.4.0-dev3"
+    "@harmoniclabs/koios-pluts": "^0.1.4-dev1",
+    "@harmoniclabs/plu-ts": "^0.4.0-dev3",
+    "@harmoniclabs/uint8array-utils": "^1.0.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.18.6",
